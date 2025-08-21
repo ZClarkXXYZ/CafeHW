@@ -25,12 +25,9 @@ public class Order {
 
     //Display the Order
     public void displayOrderDetails() {
-        System.out.print("Item 1: " + this.item1.getName() + " : $");
-        System.out.println(this.item1.getPrice());
-        System.out.print("Item 2: " + this.item2.getName() + " : $");
-        System.out.println(this.item2.getPrice());
-        System.out.print("Item 3: " + this.item3.getName() + " : $");
-        System.out.println(this.item3.getPrice());
+        this.item1.displayItemInfo();
+        this.item2.displayItemInfo();
+        this.item3.displayItemInfo();
         System.out.print("Total Cost: $");
         calculateTotal();
         System.out.println(this.totalAmount);
