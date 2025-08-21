@@ -3,19 +3,21 @@ public class TestClass {
 
     public static void main(String[] args){
 
+
         //Testing menu items
         MenuItem item1 = new MenuItem("Pizza", 3.5, "Food");
         MenuItem item2 = new MenuItem("Dr Pepper", 1.0, "Soda");
         MenuItem item3 = new MenuItem("Cookie", 0.4, "Dessert");
 
-        Cafe cafe1 = new Cafe(); //Testing Cafe methods
+        System.out.println(""); //Making new line
+
+        Cafe cafe1 = new Cafe();
+
         cafe1.addItem1(item1);
         cafe1.addItem2(item2);
         cafe1.addItem3(item3);
 
         cafe1.displayMenu();
-
-        System.out.println(""); //Making new line
 
         Order order1 = new Order(); //testing making orders
         order1.addItem1(item1);
@@ -40,5 +42,8 @@ public class TestClass {
         order1.addItem2(item3);
         order1.displayOrderDetails();
         cafe1.placeOrder(order1);
+
     }
+
+
 }
